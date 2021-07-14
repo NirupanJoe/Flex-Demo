@@ -1,17 +1,14 @@
 import { React, useEffect } from 'react';
 import './App.scss';
-import context from './core/context';
 import SampleService from './services/sample';
-import SimpleButton from './components/simpleButton';
+import FlexSelect from './components/flexSelect';
 
 const App = () => {
 	useEffect(SampleService.sayHai, []);
 
 	return (
 		<div className="App">
-			<div>Count: { context.state.count }</div>
-			<div>{ SimpleButton() }</div>
-			<div>Refresh ID: { context.state.refreshID }</div>
+			<div>Count: { FlexSelect() }</div>
 		</div>
 	);
 };
