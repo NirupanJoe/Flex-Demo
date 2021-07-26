@@ -1,16 +1,14 @@
 import { React, useEffect } from 'react';
 import './App.scss';
 import SampleService from './services/sample';
-import FlexSelect from './components/flexSelect';
-import FlexBox from './components/flexBox';
+import FlexDemo from './components/flexDemo';
 
 const App = () => {
 	useEffect(SampleService.sayHai, []);
 
 	return (
 		<div className="App">
-			{ FlexSelect() }
-			{ FlexBox() }
+			{FlexDemo()}
 		</div>
 	);
 };
